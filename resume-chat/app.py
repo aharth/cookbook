@@ -10,6 +10,11 @@ from langchain.memory import ConversationBufferMemory
 from chainlit.types import ThreadDict
 import chainlit as cl
 
+import memory
+
+@cl.data_layer
+def get_data_layer():
+    return memory.InMemoryDataLayer()
 
 def setup_runnable():
     memory = cl.user_session.get("memory")  # type: ConversationBufferMemory

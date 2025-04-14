@@ -1,0 +1,7 @@
+chainlit
+langchain
+pytest
+pytest-asyncio
+langchain-community
+openai
+

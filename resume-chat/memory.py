@@ -173,7 +173,7 @@ class InMemoryDataLayer(BaseDataLayer):
                 "id": thread_id,
                 "name": name or "",
                 "userId": user_id or "",
-                #                "userIdentifier": user_id or "",
+                "userIdentifier": user_id or "",
                 "createdAt": now_iso(),
                 "metadata": metadata or {},
                 "tags": tags or [],
